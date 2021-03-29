@@ -1,0 +1,25 @@
+25.3.2021
+---------
+    Things Learnt/Done:
+    ------------------
+        -event loop
+        -async call
+        -encodeURIComponent
+        -decodeURIcomponent
+        -fetching lat & long
+    
+    Doubts:
+    ------
+        -yargs promises
+
+26.3.2021
+---------
+    Things Learnt/Done:
+    ------------------
+        -
+    
+    Doubts:
+    ------
+        -unable to understand the response body
+        -in case of calling google api, if the url is wrong then if(error) is run, but not in this case
+        -while internet is disconnected, statusCode is 200. How?
