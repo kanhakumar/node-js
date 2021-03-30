@@ -1,6 +1,8 @@
 const yargs = require('yargs');
 const axios = require('axios');
 
+const KEY = require('./constants/constants');
+
 const argv = yargs
     .options({
         a: {
@@ -15,10 +17,10 @@ const argv = yargs
     .argv;
 
 var encodedAddress = encodeURIComponent(argv.a);
-const API_KEY_PS = '2d292f1c2870e69bf13b114ff3a51e32';
+const API_KEY_PS = KEY.API_KEY_PS;
 const geocodeUrl = `http://api.positionstack.com/v1/forward?access_key=${API_KEY_PS}&query=${encodedAddress}`;
 const API_ENDPOINT = 'http://api.openweathermap.org';
-const API_KEY_OW = 'cfe77c650fea78a8f1ea6537a43b906b';
+const API_KEY_OW = KEY.API_KEY_OW;
 
 axios.get(geocodeUrl).then((response) => {
     if (response.data.data.length === 0) {

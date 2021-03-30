@@ -1,6 +1,8 @@
 const request = require('request');
 
-const API_KEY = '2d292f1c2870e69bf13b114ff3a51e32';
+const KEY = require('../constants/constants')
+
+const API_KEY = KEY.API_KEY_PS;
 // const LIMIT = 1;
 
 var geocodeAddress = (address, callback) => {

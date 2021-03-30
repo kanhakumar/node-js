@@ -1,7 +1,9 @@
 const request = require('request');
 
+const KEY = require('../constants/constants');
+
 const API_ENDPOINT = 'http://api.openweathermap.org';
-const API_KEY = 'cfe77c650fea78a8f1ea6537a43b906b';
+const API_KEY = KEY.API_KEY_OW;
 
 var getWeather = (lat, lon, callback) => {
     request({
